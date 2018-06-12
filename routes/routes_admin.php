@@ -45,15 +45,14 @@ Route::group(['middleware' => 'auth'], function(){
         Route::post('active', ['uses' => 'DestinasiWisata@setActive', 'as'=>'admin_destinasi_wisata_active']);
         Route::post('deactive', ['uses' => 'DestinasiWisata@setDeactive', 'as'=>'admin_destinasi_wisata_deactive']);
     });
-    Route::group(['prefix' => 'destinasi-event'], function(){
-        Route::get('/', ['uses' => 'Event@index', 'as' => 'admin_destinasi_event_index']);
-        Route::post('getAllData', ['uses' => 'Event@getData', 'as' => 'admin_destinasi_event_data']);
-        Route::post('create', ['uses' => 'Event@create', 'as' => 'admin_destinasi_event_create']);
-        Route::post('update-gambar', ['uses' => 'Event@updateGambar', 'as' => 'admin_destinasi_event_update_gambar']);
-        Route::post('update', ['uses' => 'Event@update', 'as' => 'admin_destinasi_event_update']);
-        Route::post('delete', ['uses' => 'Event@delete', 'as'=>'admin_destinasi_event_delete']);
-        Route::post('active', ['uses' => 'Event@setActive', 'as'=>'admin_destinasi_event_active']);
-        Route::post('deactive', ['uses' => 'Event@setDeactive', 'as'=>'admin_destinasi_event_deactive']);
+    Route::group(['prefix' => 'berita'], function(){
+        Route::get('/', ['uses' => 'BeritaController@index', 'as' => 'admin_berita_index']);
+        Route::post('getAllData', ['uses' => 'BeritaController@getData', 'as' => 'admin_berita_data']);
+        Route::post('create', ['uses' => 'BeritaController@create', 'as' => 'admin_berita_create']);
+        Route::post('update', ['uses' => 'BeritaController@update', 'as' => 'admin_berita_update']);
+        Route::post('delete', ['uses' => 'BeritaController@delete', 'as'=>'admin_berita_delete']);
+        Route::post('active', ['uses' => 'BeritaController@setActive', 'as'=>'admin_berita_active']);
+        Route::post('deactive', ['uses' => 'BeritaController@setDeactive', 'as'=>'admin_berita_deactive']);
     });
     Route::group(['prefix' => 'kategori'], function(){
         Route::get('/', ['uses' => 'Category@index', 'as' => 'admin_kategori_index']);

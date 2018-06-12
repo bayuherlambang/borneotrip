@@ -129,26 +129,6 @@
                     <p>Destinasi</p>
                   </a>
                 </li>
-                <!--
-                <li class="nav-item">
-                  <a href="{{route('admin_destinasi_wisata_index')}}" class="nav-link">
-                    <i class="fa fa-camera nav-icon"></i>
-                    <p>Destinasi Wisata</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('admin_destinasi_kuliner_index')}}" class="nav-link">
-                    <i class="fa fa-cutlery nav-icon"></i>
-                    <p>Destinasi Kuliner</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('admin_destinasi_event_index')}}" class="nav-link">
-                    <i class="fa fa-group nav-icon"></i>
-                    <p>Destinasi Event</p>
-                  </a>
-                </li>
-                -->
                 <li class="nav-item">
                   <a href="{{route('admin_kategori_index')}}" class="nav-link">
                     <i class="fa fa-group nav-icon"></i>
@@ -157,12 +137,12 @@
                 </li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
-              <a href="https://adminlte.io/docs" class="nav-link">
-                <i class="nav-icon fa fa-file"></i>
-                <p>Profil</p>
+            <li class="nav-item">
+              <a href="{{route('admin_berita_index')}}" class="nav-link">
+                <i class="nav-icon fa fa-image"></i>
+                <p>Berita</p>
               </a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a href="{{route('admin_slider_index')}}" class="nav-link">
                 <i class="nav-icon fa fa-image"></i>

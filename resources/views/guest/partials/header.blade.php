@@ -5,15 +5,15 @@
 	<div class="container">
 	 	<div class="top-nav">
 			<div class="logo">
-				<a href="#"><img src="{{ asset('guest/images/logo1.png') }}" id="section-1" class="img-responsive" alt=""/></a>
+				<a href="{{route('guest_home')}}"><img src="{{ asset('guest/images/logo1.png') }}" id="section-1" class="img-responsive" alt=""/></a>
 				</div>
 				<div class="menu">
 				<ul id="nav">
-					 <li><a href="#section-1">Home</a></li>
-					 <li><a href="#section-2">About</a></li>
-					 <li><a href="#section-3">Top tours</a></li>
-					 <li><a href="#section-4">Guides</a></li>
-					 <li><a href="#section-5">Contact</a></li>
+					 <li><a href="{{route('guest_home')}}#section-1">Home</a></li>
+					 <li><a href="{{route('guest_home')}}#section-2">About</a></li>
+					 <li><a href="{{route('guest_home')}}#section-3">Top tours</a></li>
+					 <li><a href="{{route('guest_home')}}#section-4">Guides</a></li>
+					 <li><a href="{{route('guest_home')}}#section-5">Contact</a></li>
 					 <div class="clearfix"></div>
 				 </ul>
 			</div>

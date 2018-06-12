@@ -19,7 +19,7 @@
 	 			
 				<div class="portfolio {{$t['kategori']}} mix_all" data-cat="{{$t['kategori']}}" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
-						<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						<a href="celek.com" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
 					    <img src="{{$t['gambar']}}" class="img-responsive" alt=""/></a>
 						<div class="tour-caption">
 							<span> </span>

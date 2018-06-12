@@ -35,6 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 @include('guest.partials.testimoni')
 @include('guest.partials.map')
 @include('guest.partials.contact')
+@include('guest.partials.berita')
 @include('guest.partials.footer')
 <!--/container-->
 @yield('content')  
